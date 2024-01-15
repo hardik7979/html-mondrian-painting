@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    .flex{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .grid-container{
+      display: grid;
+      width: 748px;
+      height: 748px;
+      background-color: #000;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap: 9px;
+    }
+
+    .box-row1column1{
+      background-color: #E72F24;
+    }
+
+    .box-row1column2{
+      background-color: #F0F1EC;
+      grid-column: span 3;
+    }
+
+    .box-row2column1{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+
+    .box-row2column2{
+      background-color: #F0F1EC;
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .box-row2column3{
+      background-color: #004592;
+      border-bottom: 10px solid #000;
+    }
+
+    .box-row3column{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+
+    .box-row4column1{
+      background-color: #F0F1EC;
+    }
+
+    .box-row4column2{
+      background-color: #F9D01E;
+    }
+
+    .box-row4column3{
+      background-color: #232629;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="flex">
+    <div class="grid-container">
+      <div class="box-row1column1"></div>
+      <div class="box-row1column2"></div>
+      <div class="box-row2column1"></div>
+      <div class="box-row2column2"></div>
+      <div class="box-row2column3"></div>
+      <div class="box-row3column"></div>
+      <div class="box-row4column1"></div>
+      <div class="box-row4column2"></div>
+      <div class="box-row4column3"></div>
+    </div>
+  </div>
+</body>
+
+</html>
